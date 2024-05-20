@@ -176,8 +176,11 @@ const personGenerator = {
 
     randomDayOfBirth: function (mOfB) {
         let dOfB;
-        (mOfB === 'февраля') ? dOfB = this.randomIntNumber(28, 1) : dOfB = this.randomIntNumber(31, 1);
-        (mOfB === 'апреля' || mOfB === 'июня' || mOfB === 'сентября' || mOfB === 'ноября') ? dOfB = this.randomIntNumber(30, 1) : dOfB = this.randomIntNumber(31, 1);
+        if (mOfB === 'февраля') {
+            dOfB = this.randomIntNumber(28, 1);
+        } else if (mOfB === 'апреля' || mOfB === 'июня' || mOfB === 'сентября' || mOfB === 'ноября') {
+            dOfB = this.randomIntNumber(30, 1);
+        } else {return dOfB = this.randomIntNumber(31, 1)};
         return dOfB;
     },
 
