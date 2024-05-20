@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    background-image: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.container {
+    margin-top:-85px;
+    text-shadow: rgb(234, 236, 232) 3px 0 7px;
+}
+
+.colname {
+    border: solid 3px blue;
+    font-size: 45px;
+    padding-left: 15px;
+    background-image: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    margin-bottom: 15px;
+}
+
+h4 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.card-header {
+    border: solid 3px blue;
+    width: 1100px;
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+#surnameOutput {
+    text-transform: uppercase;
+}
+
+#surnameOutput, #firstNameOutput, #middleNameOutput{
+    font-style: italic;
+}
+
+#myBtn1 {
+    border: 2px solid #3ae905;
+    background-color: #07b62d;
+    color: white;
+    padding: 10px 16px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 350px;
+    transition-duration: 0.4s;
+}
+
+#myBtn2 {
+    border: 2px solid #e97305;
+    background-color: #f30404;
+    color: white;
+    padding: 10px 16px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 350px;
+    transition-duration: 0.4s;
+    margin-left: 35px;
+}
+
+button:hover {
+    color: azure;
+    transform: scale(1.2);
+}
